@@ -1,0 +1,45 @@
+/* style index */
+
+.titulo{
+    text-align: center;
+}
+.center{
+text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+#menu li{
+display: inline;
+padding: 15px;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+#menu li a:hover{
+
+    color: gray;
+}
+.photo{
+    width: 700px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+/* style contato */
+
+.contain{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ml-50px{
+    margin-left: 50px; 
+}
