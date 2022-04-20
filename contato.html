@@ -22,17 +22,16 @@
                 <form>
                     <label for="nome">Nome</label><br>
                     <input type="text" id="nome" onkeyup ='validNome()'>
-                    <div id = 'txtNome'></div>
-                    <br>
+                    <div id = 'txtNome'></div><br>
                     <label for="email">E-mail</label><br>
-                    <input type="text" id="email">
+                    <input type="text" id="email" onkeyup = 'validEmail()'>
                     <div id = 'txtEmail'></div>
                     <br>
-                    <label for="experiencia"> conte sobre sua experiência na praça para nós.</label><br>
-                    <textarea name="experiencia" id="experiencia" cols="60" rows="10"></textarea>
+                    <label for="experiencia"> Conte-nos sobre sua experiência na praça para nós.</label><br>
+                    <textarea name="experiencia" id="experiencia" cols="60" rows="5" onkeyup="validExperiencia()"></textarea>
+                    <div id = 'txtExperiencia'></div>
                     <br>
-                    <br>
-                    <button>Enviar</button>
+                    <button onclick='enviar()''>Enviar</button>
                  </form>
             </div>
             <div class="ml-50px mb-50">
@@ -47,7 +46,7 @@
                  style="border:0;" 
                  allowfullscreen="" 
                  loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapazoom()" onmouseout="mapanormal()" id = 'mapa'></iframe>
             </div>
         </div>
 
